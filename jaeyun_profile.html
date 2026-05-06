@@ -530,6 +530,73 @@ body::after {
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+@media (max-width: 640px) {
+  .hero { min-height: auto; }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .hero-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero-avatar { width: 80px; height: 80px; }
+
+  .hero-eyebrow { font-size: 9px; letter-spacing: 2px; margin-bottom: 0.5rem; }
+
+  .hero-name { font-size: 52px; }
+
+  .hero-en { font-size: 9px; letter-spacing: 2px; }
+
+  .hero-right {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .nav {
+    padding: 0 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar { display: none; }
+
+  .nav-btn {
+    padding: 1.1rem 1rem;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .content { padding: 1.5rem 1.25rem; }
+
+  .profile-grid { grid-template-columns: 1fr 1fr; }
+
+  .p-item.half { grid-column: 1 / -1; }
+
+  .card { padding: 1.25rem; }
+
+  .img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .classified-bar p { font-size: 9px; letter-spacing: 1px; }
+
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+  .lightbox-nav { font-size: 20px; padding: 0.4rem 0.6rem; }
+
+  .g-tab { font-size: 10px; letter-spacing: 1px; padding: 0.9rem 1rem; }
+}
 </style>
 </head>
 <body>
